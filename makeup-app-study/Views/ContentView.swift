@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  makeup-app-study
-//
-//  Created by Maria Luisa Costa Pinto on 12/10/21.
-//
-
 import SwiftUI
 
 struct ContentView: View {
