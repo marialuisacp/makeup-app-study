@@ -4,10 +4,11 @@ struct ProductsList: View {
   @ObservedObject var viewModel = ProductModel()
   
   var body: some View {
-    HStack {
-      VStack(alignment: .leading) {
-        List(viewModel.products, id: \.id) { product in
+    ScrollView{
+      LazyVStack{
+        ForEach(viewModel.products, id: \.id) { product in
           ProductView(product: parseProduct(product: product))
+            .padding()
         }
       }
     }

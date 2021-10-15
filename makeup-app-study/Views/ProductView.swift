@@ -4,21 +4,21 @@ struct ProductView: View {
   var product: ItemList
   var body: some View {
     
-    GroupBox(label:
-              ProductHeader(title: product.name, image: product.image_link)
-    ) {
-      Text(product.category)
-        .font(.footnote)
-        .foregroundColor(.pink)
-      Spacer()
-      Text(product.description)
-        .font(.footnote)
-        .padding()
+  GroupBox(label:
+    ProductHeader(title: product.name, image: product.image_link)
+  ) {
+    Text(product.category)
+      .font(.footnote)
+      .foregroundColor(.pink)
+    Spacer()
+    Text(product.description)
+      .font(.footnote)
+      .padding()
     }
     .background(Color.white)
     .groupBoxStyle(ListGroupBoxStyle())
     .shadow(color: .white, radius: 10, x: -10, y: -10)
-    .shadow(color: Color(.black).opacity(0.05), radius: 3, x: 10, y: 10)
+    .shadow(color: Color(.black).opacity(0.1), radius: 10, x: 5, y: 5)
   }
 }
 
