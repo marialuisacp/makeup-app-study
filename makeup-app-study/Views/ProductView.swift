@@ -5,7 +5,7 @@ struct ProductView: View {
   var body: some View {
     
     GroupBox(label:
-      ProductHeader(title: product.name, image: product.image_link)
+              ProductHeader(title: product.name, image: product.image_link)
     ) {
       Text(product.category)
         .font(.footnote)
@@ -28,12 +28,6 @@ struct ListGroupBoxStyle: GroupBoxStyle {
       configuration.label
       configuration.content
     }
-  }
-}
-
-struct ProductView_Previews: PreviewProvider {
-  static var previews: some View {
-    ProductView(product: parseProduct(product: products[0]))
   }
 }
 

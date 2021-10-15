@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct Product: Hashable, Codable {
+struct Product: Hashable, Decodable {
   var id: Int
   var brand: String
   var name: String
